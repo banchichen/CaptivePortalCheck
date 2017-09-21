@@ -1,0 +1,571 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		907E44EE1F5FC72D009475E0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 907E44ED1F5FC72D009475E0 /* AppDelegate.m */; };
+		907E44F11F5FC72D009475E0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 907E44F01F5FC72D009475E0 /* ViewController.m */; };
+		907E44F41F5FC72D009475E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 907E44F21F5FC72D009475E0 /* Main.storyboard */; };
+		907E44F61F5FC72D009475E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 907E44F51F5FC72D009475E0 /* Assets.xcassets */; };
+		907E44F91F5FC72D009475E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 907E44F71F5FC72D009475E0 /* LaunchScreen.storyboard */; };
+		907E44FC1F5FC72D009475E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 907E44FB1F5FC72D009475E0 /* main.m */; };
+		907E45061F5FC72D009475E0 /* CaptivePortalCheckTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 907E45051F5FC72D009475E0 /* CaptivePortalCheckTests.m */; };
+		907E45111F5FC72D009475E0 /* CaptivePortalCheckUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 907E45101F5FC72D009475E0 /* CaptivePortalCheckUITests.m */; };
+		907E45211F5FC78E009475E0 /* CaptivePortalCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 907E45201F5FC78C009475E0 /* CaptivePortalCheck.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		907E45021F5FC72D009475E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 907E44E11F5FC72D009475E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 907E44E81F5FC72D009475E0;
+			remoteInfo = CaptivePortalCheck;
+		};
+		907E450D1F5FC72D009475E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 907E44E11F5FC72D009475E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 907E44E81F5FC72D009475E0;
+			remoteInfo = CaptivePortalCheck;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		907E44E91F5FC72D009475E0 /* CaptivePortalCheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CaptivePortalCheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		907E44EC1F5FC72D009475E0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		907E44ED1F5FC72D009475E0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		907E44EF1F5FC72D009475E0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		907E44F01F5FC72D009475E0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		907E44F31F5FC72D009475E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		907E44F51F5FC72D009475E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		907E44F81F5FC72D009475E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		907E44FA1F5FC72D009475E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		907E44FB1F5FC72D009475E0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		907E45011F5FC72D009475E0 /* CaptivePortalCheckTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaptivePortalCheckTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		907E45051F5FC72D009475E0 /* CaptivePortalCheckTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CaptivePortalCheckTests.m; sourceTree = "<group>"; };
+		907E45071F5FC72D009475E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		907E450C1F5FC72D009475E0 /* CaptivePortalCheckUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaptivePortalCheckUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		907E45101F5FC72D009475E0 /* CaptivePortalCheckUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CaptivePortalCheckUITests.m; sourceTree = "<group>"; };
+		907E45121F5FC72D009475E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		907E451F1F5FC78C009475E0 /* CaptivePortalCheck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CaptivePortalCheck.h; sourceTree = "<group>"; };
+		907E45201F5FC78C009475E0 /* CaptivePortalCheck.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CaptivePortalCheck.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		907E44E61F5FC72D009475E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		907E44FE1F5FC72D009475E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		907E45091F5FC72D009475E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		907E44E01F5FC72D009475E0 = {
+			isa = PBXGroup;
+			children = (
+				907E44EB1F5FC72D009475E0 /* CaptivePortalCheck */,
+				907E45041F5FC72D009475E0 /* CaptivePortalCheckTests */,
+				907E450F1F5FC72D009475E0 /* CaptivePortalCheckUITests */,
+				907E44EA1F5FC72D009475E0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		907E44EA1F5FC72D009475E0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				907E44E91F5FC72D009475E0 /* CaptivePortalCheck.app */,
+				907E45011F5FC72D009475E0 /* CaptivePortalCheckTests.xctest */,
+				907E450C1F5FC72D009475E0 /* CaptivePortalCheckUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		907E44EB1F5FC72D009475E0 /* CaptivePortalCheck */ = {
+			isa = PBXGroup;
+			children = (
+				907E451E1F5FC78C009475E0 /* CaptivePortalCheck */,
+				907E44EC1F5FC72D009475E0 /* AppDelegate.h */,
+				907E44ED1F5FC72D009475E0 /* AppDelegate.m */,
+				907E44EF1F5FC72D009475E0 /* ViewController.h */,
+				907E44F01F5FC72D009475E0 /* ViewController.m */,
+				907E44F21F5FC72D009475E0 /* Main.storyboard */,
+				907E44F51F5FC72D009475E0 /* Assets.xcassets */,
+				907E44F71F5FC72D009475E0 /* LaunchScreen.storyboard */,
+				907E44FA1F5FC72D009475E0 /* Info.plist */,
+				907E44FB1F5FC72D009475E0 /* main.m */,
+			);
+			path = CaptivePortalCheck;
+			sourceTree = "<group>";
+		};
+		907E45041F5FC72D009475E0 /* CaptivePortalCheckTests */ = {
+			isa = PBXGroup;
+			children = (
+				907E45051F5FC72D009475E0 /* CaptivePortalCheckTests.m */,
+				907E45071F5FC72D009475E0 /* Info.plist */,
+			);
+			path = CaptivePortalCheckTests;
+			sourceTree = "<group>";
+		};
+		907E450F1F5FC72D009475E0 /* CaptivePortalCheckUITests */ = {
+			isa = PBXGroup;
+			children = (
+				907E45101F5FC72D009475E0 /* CaptivePortalCheckUITests.m */,
+				907E45121F5FC72D009475E0 /* Info.plist */,
+			);
+			path = CaptivePortalCheckUITests;
+			sourceTree = "<group>";
+		};
+		907E451E1F5FC78C009475E0 /* CaptivePortalCheck */ = {
+			isa = PBXGroup;
+			children = (
+				907E451F1F5FC78C009475E0 /* CaptivePortalCheck.h */,
+				907E45201F5FC78C009475E0 /* CaptivePortalCheck.m */,
+			);
+			path = CaptivePortalCheck;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		907E44E81F5FC72D009475E0 /* CaptivePortalCheck */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 907E45151F5FC72D009475E0 /* Build configuration list for PBXNativeTarget "CaptivePortalCheck" */;
+			buildPhases = (
+				907E44E51F5FC72D009475E0 /* Sources */,
+				907E44E61F5FC72D009475E0 /* Frameworks */,
+				907E44E71F5FC72D009475E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CaptivePortalCheck;
+			productName = CaptivePortalCheck;
+			productReference = 907E44E91F5FC72D009475E0 /* CaptivePortalCheck.app */;
+			productType = "com.apple.product-type.application";
+		};
+		907E45001F5FC72D009475E0 /* CaptivePortalCheckTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 907E45181F5FC72D009475E0 /* Build configuration list for PBXNativeTarget "CaptivePortalCheckTests" */;
+			buildPhases = (
+				907E44FD1F5FC72D009475E0 /* Sources */,
+				907E44FE1F5FC72D009475E0 /* Frameworks */,
+				907E44FF1F5FC72D009475E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				907E45031F5FC72D009475E0 /* PBXTargetDependency */,
+			);
+			name = CaptivePortalCheckTests;
+			productName = CaptivePortalCheckTests;
+			productReference = 907E45011F5FC72D009475E0 /* CaptivePortalCheckTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		907E450B1F5FC72D009475E0 /* CaptivePortalCheckUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 907E451B1F5FC72D009475E0 /* Build configuration list for PBXNativeTarget "CaptivePortalCheckUITests" */;
+			buildPhases = (
+				907E45081F5FC72D009475E0 /* Sources */,
+				907E45091F5FC72D009475E0 /* Frameworks */,
+				907E450A1F5FC72D009475E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				907E450E1F5FC72D009475E0 /* PBXTargetDependency */,
+			);
+			name = CaptivePortalCheckUITests;
+			productName = CaptivePortalCheckUITests;
+			productReference = 907E450C1F5FC72D009475E0 /* CaptivePortalCheckUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		907E44E11F5FC72D009475E0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Alibaba;
+				TargetAttributes = {
+					907E44E81F5FC72D009475E0 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					907E45001F5FC72D009475E0 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 907E44E81F5FC72D009475E0;
+					};
+					907E450B1F5FC72D009475E0 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 907E44E81F5FC72D009475E0;
+					};
+				};
+			};
+			buildConfigurationList = 907E44E41F5FC72D009475E0 /* Build configuration list for PBXProject "CaptivePortalCheck" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 907E44E01F5FC72D009475E0;
+			productRefGroup = 907E44EA1F5FC72D009475E0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				907E44E81F5FC72D009475E0 /* CaptivePortalCheck */,
+				907E45001F5FC72D009475E0 /* CaptivePortalCheckTests */,
+				907E450B1F5FC72D009475E0 /* CaptivePortalCheckUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		907E44E71F5FC72D009475E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				907E44F91F5FC72D009475E0 /* LaunchScreen.storyboard in Resources */,
+				907E44F61F5FC72D009475E0 /* Assets.xcassets in Resources */,
+				907E44F41F5FC72D009475E0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		907E44FF1F5FC72D009475E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		907E450A1F5FC72D009475E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		907E44E51F5FC72D009475E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				907E44F11F5FC72D009475E0 /* ViewController.m in Sources */,
+				907E44FC1F5FC72D009475E0 /* main.m in Sources */,
+				907E44EE1F5FC72D009475E0 /* AppDelegate.m in Sources */,
+				907E45211F5FC78E009475E0 /* CaptivePortalCheck.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		907E44FD1F5FC72D009475E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				907E45061F5FC72D009475E0 /* CaptivePortalCheckTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		907E45081F5FC72D009475E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				907E45111F5FC72D009475E0 /* CaptivePortalCheckUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		907E45031F5FC72D009475E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 907E44E81F5FC72D009475E0 /* CaptivePortalCheck */;
+			targetProxy = 907E45021F5FC72D009475E0 /* PBXContainerItemProxy */;
+		};
+		907E450E1F5FC72D009475E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 907E44E81F5FC72D009475E0 /* CaptivePortalCheck */;
+			targetProxy = 907E450D1F5FC72D009475E0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		907E44F21F5FC72D009475E0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				907E44F31F5FC72D009475E0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		907E44F71F5FC72D009475E0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				907E44F81F5FC72D009475E0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		907E45131F5FC72D009475E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		907E45141F5FC72D009475E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		907E45161F5FC72D009475E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3TA49P2Q58;
+				INFOPLIST_FILE = CaptivePortalCheck/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alibaba-inc.www.CaptivePortalCheck";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		907E45171F5FC72D009475E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3TA49P2Q58;
+				INFOPLIST_FILE = CaptivePortalCheck/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alibaba-inc.www.CaptivePortalCheck";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		907E45191F5FC72D009475E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3TA49P2Q58;
+				INFOPLIST_FILE = CaptivePortalCheckTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alibaba-inc.www.CaptivePortalCheckTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CaptivePortalCheck.app/CaptivePortalCheck";
+			};
+			name = Debug;
+		};
+		907E451A1F5FC72D009475E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3TA49P2Q58;
+				INFOPLIST_FILE = CaptivePortalCheckTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alibaba-inc.www.CaptivePortalCheckTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CaptivePortalCheck.app/CaptivePortalCheck";
+			};
+			name = Release;
+		};
+		907E451C1F5FC72D009475E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3TA49P2Q58;
+				INFOPLIST_FILE = CaptivePortalCheckUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alibaba-inc.www.CaptivePortalCheckUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CaptivePortalCheck;
+			};
+			name = Debug;
+		};
+		907E451D1F5FC72D009475E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3TA49P2Q58;
+				INFOPLIST_FILE = CaptivePortalCheckUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alibaba-inc.www.CaptivePortalCheckUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CaptivePortalCheck;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		907E44E41F5FC72D009475E0 /* Build configuration list for PBXProject "CaptivePortalCheck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				907E45131F5FC72D009475E0 /* Debug */,
+				907E45141F5FC72D009475E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		907E45151F5FC72D009475E0 /* Build configuration list for PBXNativeTarget "CaptivePortalCheck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				907E45161F5FC72D009475E0 /* Debug */,
+				907E45171F5FC72D009475E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		907E45181F5FC72D009475E0 /* Build configuration list for PBXNativeTarget "CaptivePortalCheckTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				907E45191F5FC72D009475E0 /* Debug */,
+				907E451A1F5FC72D009475E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		907E451B1F5FC72D009475E0 /* Build configuration list for PBXNativeTarget "CaptivePortalCheckUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				907E451C1F5FC72D009475E0 /* Debug */,
+				907E451D1F5FC72D009475E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 907E44E11F5FC72D009475E0 /* Project object */;
+}

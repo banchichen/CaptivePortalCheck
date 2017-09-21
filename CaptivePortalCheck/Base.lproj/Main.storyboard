@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="782-Je-gW9">
+                                <rect key="frame" x="87.5" y="317" width="200" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="检测当前wifi是否需要认证"/>
+                                <connections>
+                                    <action selector="checkWifiBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PRk-Ai-dRa"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="验证结果：-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V6g-ox-m6X">
+                                <rect key="frame" x="145.5" y="360" width="83.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="开启测试模式" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uMz-Ne-Gge">
+                                <rect key="frame" x="110.5" y="140" width="104" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jxw-Ot-HSv">
+                                <rect key="frame" x="224.5" y="135" width="51" height="31"/>
+                                <connections>
+                                    <action selector="testModeSwitchValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="YBa-v0-qcB"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90312499999999996" green="0.93041294642857142" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jxw-Ot-HSv" firstAttribute="leading" secondItem="uMz-Ne-Gge" secondAttribute="trailing" constant="10" id="3xz-BQ-RWc"/>
+                            <constraint firstItem="V6g-ox-m6X" firstAttribute="top" secondItem="782-Je-gW9" secondAttribute="bottom" constant="10" id="98B-hS-bgE"/>
+                            <constraint firstItem="jxw-Ot-HSv" firstAttribute="centerY" secondItem="uMz-Ne-Gge" secondAttribute="centerY" id="BxU-QF-KQg"/>
+                            <constraint firstItem="V6g-ox-m6X" firstAttribute="centerX" secondItem="782-Je-gW9" secondAttribute="centerX" id="DIO-NU-44R"/>
+                            <constraint firstItem="782-Je-gW9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="by6-bq-xFy"/>
+                            <constraint firstItem="782-Je-gW9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="g1p-Nk-FhK"/>
+                            <constraint firstItem="uMz-Ne-Gge" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-25" id="wW7-We-Fnm"/>
+                            <constraint firstItem="uMz-Ne-Gge" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="120" id="x9W-sP-8J5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="checkResultLabel" destination="V6g-ox-m6X" id="oNT-NL-5bs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
+        </scene>
+    </scenes>
+</document>
