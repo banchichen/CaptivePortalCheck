@@ -28,7 +28,7 @@
     dispatch_once(&onceToken, ^{
         if (manager == nil) {
             manager = [[CaptivePortalCheck alloc] init];
-            manager.expectUrl = [NSURL URLWithString:@"http://www.baidu.com"];
+            manager.expectUrl = [NSURL URLWithString:@"http://captive.apple.com/hotspotdetect.html"];
         }
     });
     return manager;
@@ -57,11 +57,16 @@
     decisionHandler(WKNavigationActionPolicyAllow);
     
     self.trueUrl = navigationAction.request.URL;
+    // 过滤异常url & 不能打开的url
+    if (!self.trueUrl || ![[UIApplication sharedApplication] canOpenURL:self.trueUrl]) {
+        self.trueUrl = self.expectUrl;
+    }
+    
     if (self.openTestMode) {
         // 测试用 这个url是上海花生地铁wifi的认证页，连上上海花生地铁wifi后，未认证时访问所有网页都会被重定向到该地址
         self.trueUrl= [NSURL URLWithString:@"http://portal.wifi8.com/wifiapp"];
     }
-    if ([self.trueUrl.host containsString:@"baidu.com"]) {
+    if ([self.trueUrl.host containsString:@"captive.apple.com"]) {
         if (_networkCheckComplection) {
             _networkCheckComplection(NO);
             _networkCheckComplection = nil;
@@ -89,12 +94,16 @@
         CGFloat systemVersion = [[[UIDevice currentDevice] systemVersion] floatValue];
         if (systemVersion >= 9.0 && systemVersion < 11.0) {
             // iOS11下，SFSafariViewController有些问题，页面会白屏...原因暂时未知，如果你知道求告知~
-            SFSafariViewController *safariVc = [[SFSafariViewController alloc] initWithURL:self.trueUrl];
-            UIViewController *currentVc = [UIApplication sharedApplication].delegate.window.rootViewController;
-            if (currentVc.presentedViewController) {
-                [currentVc.presentedViewController presentViewController:safariVc animated:YES completion:nil];
-            } else if (currentVc) {
-                [currentVc presentViewController:safariVc animated:YES completion:nil];
+            @try {
+                SFSafariViewController *safariVc = [[SFSafariViewController alloc] initWithURL:self.trueUrl];
+                UIViewController *currentVc = [UIApplication sharedApplication].delegate.window.rootViewController;
+                if (currentVc.presentedViewController) {
+                    [currentVc.presentedViewController presentViewController:safariVc animated:YES completion:nil];
+                } else if (currentVc) {
+                    [currentVc presentViewController:safariVc animated:YES completion:nil];
+                }
+            } @catch (NSException *exception) {
+                NSLog(@"CaptivePortalCheck 弹出SFSafariViewController异常：%@",exception);
             }
         } else {
             if ([[UIApplication sharedApplication] canOpenURL:self.trueUrl]) {
